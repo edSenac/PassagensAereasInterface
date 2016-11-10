@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="571.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.TelaPrincipalController">
+   <children>
+      <GridPane layoutX="76.0" layoutY="151.0" prefHeight="178.0" prefWidth="420.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="211.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="209.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nome">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="RG" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Telefone" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nome" scaleY="2.0" GridPane.columnIndex="1" />
+            <TextField fx:id="rg" scaleY="2.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="telefone" scaleY="2.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Text layoutX="143.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Clientes" wrappingWidth="285.7265625">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="salvar" layoutX="347.0" layoutY="347.0" mnemonicParsing="false" text="Salvar">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
